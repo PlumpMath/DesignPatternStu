@@ -87,6 +87,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\OperationContext\OperationContext.csproj">
+      <Project>{64e6cd2a-492b-4bb2-a912-f86f70e87f62}</Project>
+      <Name>OperationContext</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OperationLibrary\OperationFactory.csproj">
       <Project>{f2fa6d1b-2889-4499-8a87-b72bb0f8311a}</Project>
       <Name>OperationFactory</Name>

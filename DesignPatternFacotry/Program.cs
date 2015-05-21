@@ -39,17 +39,32 @@ namespace DesignPatternSolution
 
             #region P2
 
-            Operation operaObj = OperationFactory.CreateOperation(sign);
+            //Operation operaObj = OperationFactory.CreateOperation(sign);
 
-            if (operaObj == null) msg += "Error sign ";
+            //if (operaObj == null) msg += "Error sign ";
 
+            //else
+            //{ 
+            //    operaObj.NumX = numX; 
+
+            //    operaObj.NumY = numY;
+
+            //    operaObj.CalculateResult(ref numResult, ref msg);
+            //}
+
+            #endregion
+
+            #region P3
+
+            OperationContext operaObj = new OperationContext(sign);
+
+            if (operaObj == null)
+            {
+                msg += "Error sign ";
+            }
             else
-            { 
-                operaObj.NumX = numX; 
-
-                operaObj.NumY = numY;
-
-                operaObj.CalculateResult(ref numResult, ref msg);
+            {
+                operaObj.GetResult(numX, numY, ref numResult, ref msg);
             }
 
             #endregion
