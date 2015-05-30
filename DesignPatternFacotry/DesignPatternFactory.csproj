@@ -88,7 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OperationContext\OperationContext.csproj">
-      <Project>{64e6cd2a-492b-4bb2-a912-f86f70e87f62}</Project>
+      <Project>{05625f89-364a-4dae-8318-eaab884ea159}</Project>
       <Name>OperationContext</Name>
     </ProjectReference>
     <ProjectReference Include="..\OperationLibrary\OperationFactory.csproj">
